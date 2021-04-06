@@ -1,0 +1,38 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
+    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rm -rf mochawesome-report full_report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "6.8.0",
+    "cypress-cucumber-preprocessor": "4.0.3",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix:": ".cucumber"
+    }
+  }
+}
