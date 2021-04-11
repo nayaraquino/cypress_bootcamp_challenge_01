@@ -1,6 +1,6 @@
 
 # Teste com Cypress + CI em GitHub Actions
-### Agilizei Bootcamp - Challenge 02
+### Agilizei Bootcamp - Challenge 01
 ---
 Projeto desenvolvido para o desafio do primeiro módulo do Agilizei Bootcamp.
 
