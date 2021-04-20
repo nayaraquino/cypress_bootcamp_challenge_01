@@ -9,6 +9,10 @@ Projeto desenvolvido para o desafio do primeiro módulo do Agilizei Bootcamp.
 - Relatórios (Mochawesome e Cucumber HTML)
 - Cucumber + Cypress
 - CI com GitHub Actions
+- Interação com diferentes tipos de inputs
+- Upload de imagens / arquivos
+- Conceito de rotas e uso de mocks 
+- Introdução ao BDD
 
 
 ## :hammer_and_wrench: Tecnologias Utilizadas
