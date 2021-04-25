@@ -51,7 +51,7 @@ $ npx cypress run
 ![login](https://user-images.githubusercontent.com/71460952/114321314-a53d0400-9af0-11eb-94d2-5b13a98ab1c5.gif)
 
 
-:rotating_light: Não foi finalizada a CI com o Actions pois permaneceu apresentando erro. 
+:rotating_light: Não foi finalizada a CI com o Actions pois permaneceu apresentando erro.. 
 
 
 ##
