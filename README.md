@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-### Agilizei Bootcamp - Chalenge 01
-
-Primeiro desafio desenvolvido para o Agilizei Bootcamp.
-=======
-
 # Teste com Cypress + CI em GitHub Actions
 ### Agilizei Bootcamp - Challenge 01
 ---
@@ -27,14 +21,31 @@ Projeto desenvolvido para o desafio do primeiro módulo do Agilizei Bootcamp.
 
 
 ## :checkered_flag: Como Executar o Projeto
-> Background: Pasta do projeto aberta no Cypress.
 
-Basta selecionar a spec que deseja executar.
+```bash
+# Clone este repositório
+$ git clone https://github.com/nayaraquino/cypress_bootcamp_challenge_04.git
+```
+A execução pode ser feita através da linha de comando ou do próprio framework.
+- Através da linha de comando:
+```bash
+# Na pasta Aulas, execute:
+$ npx cypress open
+```
+- Através do framework:
+Basta abrir o Cypress e através da interface dele escolher a pasta do projeto.
+
+Após isso, é só escolher a spec desejada e assistir a execução dos testes.
+
 
 ![running test](https://user-images.githubusercontent.com/71460952/114319822-7ec79a80-9ae9-11eb-951e-66e0c20e730a.gif)
 
-## ▶️ Testes em Execução
-![login](https://user-images.githubusercontent.com/71460952/114321314-a53d0400-9af0-11eb-94d2-5b13a98ab1c5.gif)
+OU
+
+```bash
+# Na pasta Aulas, execute:
+$ npx cypress run
+```
 
 
 :rotating_light: Não foi finalizada a CI com o Actions pois permaneceu apresentando erro. 
