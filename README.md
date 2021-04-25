@@ -21,11 +21,31 @@ Projeto desenvolvido para o desafio do primeiro módulo do Agilizei Bootcamp.
 
 
 ## :checkered_flag: Como Executar o Projeto
-> Background: Pasta do projeto aberta no Cypress.
 
-Basta selecionar a spec que deseja executar.
+```bash
+# Clone este repositório
+$ git clone https://github.com/nayaraquino/cypress_bootcamp_challenge_01.git
+```
+A execução pode ser feita através da linha de comando ou do próprio framework.
+- Através da linha de comando:
+```bash
+# Na pasta Aulas, execute:
+$ npx cypress open
+```
+- Através do framework:
+Basta abrir o Cypress e através da interface dele escolher a pasta do projeto.
+
+Após isso, é só escolher a spec desejada e assistir a execução dos testes.
+
 
 ![running test](https://user-images.githubusercontent.com/71460952/114319822-7ec79a80-9ae9-11eb-951e-66e0c20e730a.gif)
+
+OU
+
+```bash
+# Na pasta Aulas, execute:
+$ npx cypress run
+```
 
 ## ▶️ Testes em Execução
 ![login](https://user-images.githubusercontent.com/71460952/114321314-a53d0400-9af0-11eb-94d2-5b13a98ab1c5.gif)
@@ -39,4 +59,8 @@ Feito com ❤️ por <a href="https://www.linkedin.com/in/nayaraquino/">Nayara A
 
 [![Github](https://img.shields.io/badge/-Github-595D60?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nayaraquino/)](https://github.com/nayaraquino/)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-595D60?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nayaraquino//)](https://www.linkedin.com/in/nayaraquino/)
+<<<<<<< HEAD
 [![Gmail](https://img.shields.io/badge/-Gmail-595D60?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nayaraquino7@gmail.com/)](mailto:nayaraquino7@gmail.com/)
+=======
+[![Gmail](https://img.shields.io/badge/-Gmail-595D60?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nayaraquino7@gmail.com/)](mailto:nayaraquino7@gmail.com/)
+>>>>>>> 592d679d42a401737c0eab043a19db83cadf3d3a
