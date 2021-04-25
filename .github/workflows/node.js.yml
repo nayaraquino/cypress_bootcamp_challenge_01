@@ -34,6 +34,7 @@ jobs:
     
     # executar testes
     - run: npx cypress run
+      continue-on-error: true
     
     # publucar relatorio em html
     - name: Deploy to GithubPages
