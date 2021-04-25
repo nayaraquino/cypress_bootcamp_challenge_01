@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
-    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
-    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features",
     "report:merge": "mochawesome-merge > full_report.json",
     "report:mocha": "marge full_report.json",
     "report:clean": "rm -rf mochawesome-report full_report.json"
@@ -25,14 +23,5 @@
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/reports/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix:": ".cucumber"
-    }
   }
 }
