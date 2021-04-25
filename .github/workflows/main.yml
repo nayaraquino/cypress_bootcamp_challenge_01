@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-lastest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checkout do codigo do projeto
+      - uses: actions/checkout@v2
+      
+      # Setup do Node.JS
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      # Instalando as dependencias
+      - run: npm install
+        
+      # Executar os testes
+      - run: npx cypress run
+        continue-on-error: true
+      
+      # Gerar o relatório em HTML
+      - run: npm run report:merge
+      - run: npm run report:mocha
+      
+      # Publicar relatório em HTML
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: mochawesome-report
