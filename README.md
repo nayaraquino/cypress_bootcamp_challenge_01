@@ -24,7 +24,7 @@ Projeto desenvolvido para o desafio do primeiro módulo do Agilizei Bootcamp.
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/nayaraquino/cypress_bootcamp_challenge_04.git
+$ git clone https://github.com/nayaraquino/cypress_bootcamp_challenge_01.git
 ```
 A execução pode ser feita através da linha de comando ou do próprio framework.
 - Através da linha de comando:
@@ -57,4 +57,3 @@ Feito com ❤️ por <a href="https://www.linkedin.com/in/nayaraquino/">Nayara A
 [![Github](https://img.shields.io/badge/-Github-595D60?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nayaraquino/)](https://github.com/nayaraquino/)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-595D60?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nayaraquino//)](https://www.linkedin.com/in/nayaraquino/)
 [![Gmail](https://img.shields.io/badge/-Gmail-595D60?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nayaraquino7@gmail.com/)](mailto:nayaraquino7@gmail.com/)
->>>>>>> 50786a2cf17913468ece944ce0ccd0f762bb5c5f
