@@ -15,7 +15,7 @@ context('User login', () => {
         cy.get('button#SubmitCreate').click();
         cy.url().should('contain', '?controller=authentication&back=my-account#account-creation')
 
-        //Filling the form
+        //Fill form
         cy.get('input#id_gender2').check('2');
         cy.get('input#customer_firstname').type(chance.first());
         cy.get('input#customer_lastname').type(chance.last());
