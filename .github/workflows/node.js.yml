@@ -22,29 +22,22 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
-        
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    
     # Checks-out do código do projeto
     - uses: actions/checkout@v2
-    
     # Setup do Node.JS
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
       with:
         node-version: ${{ matrix.node-version }}
-        
     #instalando as dependencias
     - run: npm install
-    
     # executando os testes
     - run: npm run cy:run
       continue-on-error: true
-      
     # gerando o relatorio em html
     - run: npm run report:mocha
-    
     # publicando relatorio em html
     - name: Deploy to GithubPages
       uses: JamesIves/github-pages-deploy-action@4.1.0
@@ -52,3 +45,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: cypress/mochawesome-report
+
+    
