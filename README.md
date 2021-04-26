@@ -51,8 +51,8 @@ $ npx cypress run
 ![login](https://user-images.githubusercontent.com/71460952/114321314-a53d0400-9af0-11eb-94d2-5b13a98ab1c5.gif)
 
 
-:rotating_light: Não foi finalizada a CI com o Actions pois permaneceu apresentando erro.. 
-
+## :link: CI com Github Actions :link:
+https://github.com/nayaraquino/cypress_bootcamp_challenge_01/actions/runs/785930190
 
 ##
 Feito com ❤️ por <a href="https://www.linkedin.com/in/nayaraquino/">Nayara Aquino</a> :wave: Entre em contato!
