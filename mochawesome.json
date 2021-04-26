@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-26T00:00:00.672Z",
-    "end": "2021-04-26T00:00:17.444Z",
-    "duration": 16772,
+    "start": "2021-04-26T00:02:55.560Z",
+    "end": "2021-04-26T00:03:14.612Z",
+    "duration": 19052,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8a669e1a-0b72-4f90-9213-014dabb9dfba",
+      "uuid": "f77d62f6-4380-4f0f-98e4-9ef78e4507b3",
       "title": "",
       "fullFile": "cypress/integration/login.spec.js",
       "file": "cypress/integration/login.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "943e2ae6-f2fd-4aa7-8197-bda416693834",
+          "uuid": "ced567d7-50dc-4654-8ae5-e81c4f76ddb8",
           "title": "User login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login",
               "fullTitle": "User login Login",
               "timedOut": null,
-              "duration": 16684,
+              "duration": 18965,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//Registration\ncy.visit('index.php');\ncy.get('a.login').click();\ncy.url().should('contain', '?controller=authentication&back=my-account'); //Log in\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.url().should('contain', '?controller=authentication&back=my-account#account-creation'); //Fill form\ncy.get('input#id_gender2').check('2');\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#company').type('LTDA');\ncy.get('input#passwd').type('Agili');\ncy.get('select#days').select('5');\ncy.get('select#months').select('June');\ncy.get('select#years').select('1996');\ncy.get('input#newsletter').check();\ncy.get('input#optin').check();\ncy.get('input#address1').type('591 Grand Avenue');\ncy.get('input#address2').type('Suite G102');\ncy.get('input#city').type('San Marcos');\ncy.get('select#id_country').select('United States');\ncy.get('select#id_state').select('California');\ncy.get('input#postcode').type('57057');\ncy.get('textarea#other').type('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ex sit amet nibh efficitur eleifend. ');\ncy.get('input#phone').type(chance.phone({\n  formatted: true\n}));\ncy.get('input#phone_mobile').type(chance.phone({\n  formatted: true\n}));\ncy.get('input#alias').type(' extra info');\ncy.get('button#submitAccount').click(); //Url and text assertion\ncy.url().should('contain', '?controller=my-account');\ncy.get('p.info-account').should('contain', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
               "err": {},
-              "uuid": "7727659f-f2f3-4234-be95-17fdc8b63f8c",
-              "parentUUID": "943e2ae6-f2fd-4aa7-8197-bda416693834",
+              "uuid": "b0ee92eb-9b31-4b5f-8240-6fd91772ca10",
+              "parentUUID": "ced567d7-50dc-4654-8ae5-e81c4f76ddb8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7727659f-f2f3-4234-be95-17fdc8b63f8c"
+            "b0ee92eb-9b31-4b5f-8240-6fd91772ca10"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16684,
+          "duration": 18965,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
