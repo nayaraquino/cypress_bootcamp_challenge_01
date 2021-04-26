@@ -41,6 +41,7 @@ jobs:
     - name: Deploy to GithubPages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: mochawesome-report
         
@@ -49,6 +50,5 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       if: always()
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         name: videos
         path: cypress/videos
